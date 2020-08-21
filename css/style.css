@@ -1,28 +1,55 @@
+body {
+  font-family: 'Orbitron', sans-serif;
+  background-color: #e4f2e9;
+}
+
+.title {
+  font-size: 42px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+#start-button {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 20px;
+}
+
+#start-button:hover {
+  cursor: pointer;
+}
+
+.score {
+  text-align: center;
+  font-size: 32px;
+}
+
 .container {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
-.grid {
+.container .grid {
   width: 200px;
   height: 400px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: yellow;
+  background-color: #abbccc;
+  border: 2px solid #000;
 }
 
-.grid div {
+.container .grid div {
   height: 20px;
   width: 20px;
 }
 
-.tetromino {
-  background-color: blue;
-}
-
-.mini-grid {
+.container .mini-grid {
   margin-left: 50px;
   width: 80px;
   height: 80px;
@@ -30,11 +57,13 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: yellow;
+  background-color: #abbccc;
+  border: 2px solid #000 div;
+  border-height: 20px;
+  border-width: 20px;
 }
 
-.mini-grid div {
-  height: 20px;
-  width: 20px;
+.tetromino {
+  background-color: blue;
 }
 /*# sourceMappingURL=style.css.map */

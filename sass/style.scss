@@ -1,34 +1,59 @@
-.container {
-    display: flex;
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #e4f2e9;
+}
+.title {
+    font-size: 42px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 200px;
+
 }
 
-.grid {
-    width: 200px;
-    height: 400px;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: yellow;
-
-    div {
-        height: 20px;
-        width: 20px;
+#start-button {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    &:hover {
+        cursor: pointer;
     }
 }
+.score {
+    text-align: center;
+    font-size: 32px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .grid {
+        width: 200px;
+        height: 400px;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #abbccc;
+        border: 2px solid #000;
+        div {
+            height: 20px;
+            width: 20px;
+        }
+    }
+    .mini-grid {
+        margin-left: 50px;
+        width: 80px;
+        height: 80px;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #abbccc;
+        border: 2px solid #000
+        div {
+            height: 20px;
+            width: 20px;
+        }
+
+    }
+}
+
 
 .tetromino {
     background-color: blue;
-}
-
-.mini-grid {
-    margin-left: 50px;
-    width: 80px;
-    height: 80px;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: yellow;
-    div {
-        height: 20px;
-        width: 20px;
-    }
-
 }
